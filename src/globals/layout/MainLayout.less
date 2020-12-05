@@ -1,0 +1,27 @@
+@import "../../utils/styles/variables.less";
+.app-layout {
+  .sub-header {
+    background: @layout-sub-header-background;
+    height: 80px;
+    position: relative;
+    margin-top: 64px;
+  }
+  &.ant-layout {
+    height: 100vh;
+    // background: #fafbfe;
+    &.ant-layout-has-sider {
+      flex-direction: column;
+    }
+  }
+  .ant-layout-content {
+    top: 64px;
+    position: absolute;
+    z-index: 100;
+  }
+  .ant-layout {
+    background: #f9fafc !important;
+    .ant-layout-footer {
+      background: #f9fafc !important;
+    }
+  }
+}

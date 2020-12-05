@@ -1,0 +1,12 @@
+{
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "git.enableSmartCommit": true
+}

@@ -1,0 +1,133 @@
+@import "./utils/styles/variables.less";
+body {
+  margin: 0;
+  font-family: "Montserrat Regular", sans-serif !important;
+}
+
+code {
+  font-family: "Montserrat Regular", sans-serif !important;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Regular.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Medium.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Bold.ttf");
+}
+
+code {
+  font-family: "Montserrat Regular", sans-serif !important;
+}
+
+.ant-spin-container {
+  overflow: hidden;
+}
+
+.ant-form-item-label {
+  text-align: left !important;
+  text-transform: capitalize;
+}
+.ant-table-thead > tr > th {
+  text-transform: capitalize;
+}
+
+label {
+  font-family: "Montserrat Semibold" !important;
+  color: #888 !important;
+}
+
+label.ant-checkbox-wrapper {
+  span {
+    font-family: "Montserrat Medium";
+    color: #252525 !important;
+  }
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Regular.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Medium.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/Montserrat/Montserrat-Bold.ttf");
+}
+.ant-form-item-label > label::after {
+  content: "" !important;
+}
+.ant-form-item-required::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 0px !important;
+  padding-right: 5px;
+}
+.ant-form-item-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // padding-right: 10px;
+}
+.active-tag {
+  color: @accept;
+}
+.deactive-tag {
+  color: @delete;
+}
+.pending-tag {
+  color: @pending-ticket;
+}
