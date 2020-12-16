@@ -16,6 +16,7 @@ class MainLayout extends React.Component {
     const { children, globals, layout } = this.props;
     return (
       <Layout className="app-layout">
+        <h1>Testddddddddddd</h1>
         <Sider />
         <Layout
           style={{

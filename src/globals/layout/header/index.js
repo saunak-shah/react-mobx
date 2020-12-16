@@ -6,14 +6,16 @@ import { ReactComponent as Logout } from "assets/images/logout.svg";
 import { ReactComponent as Profile } from "assets/images/profile.svg";
 import { ReactComponent as Notification } from "assets/images/notification.svg";
 import "./Header.less";
-import userSeting from "utils/defaultSettings";
-import ActivityDrawer from "modules/activityLog/activity.popover";
-import Support from "../../../modules/support";
+// import userSeting from "utils/defaultSettings";
+// import ActivityDrawer from "modules/activityLog/activity.popover";
+// import Support from "../../../modules/support";
 // import Language from "./language.select";
 const { Header } = Layout;
 
 const content = (props) => {
   const { image_url } = {};
+  console.log("ggggggggggggggggggg")
+
   return (
     <div className="main-header-content-menu">
       <Menu>
@@ -34,8 +36,8 @@ const content = (props) => {
                   {[8, 9].includes(menu.id) && image_url ? (
                     <Avatar className="user-image" src={image_url} />
                   ) : (
-                    <Icon component={menu.svg} />
-                  )}
+                      <Icon component={menu.svg} />
+                    )}
                   <span>{menu.name}</span>
                 </Link>
               </Menu.Item>
@@ -71,7 +73,6 @@ class MainHeader extends Component {
 
     return (
       <Header
-        theme={userSeting.navTheme}
         style={{
           padding: "0 90px 0 25px",
           position: "fixed",
@@ -103,7 +104,7 @@ class MainHeader extends Component {
             <Badge dot={activity.counter ? true : false} className="bell-badge" />
           </div>
           {/* <Language {...props} /> */}
-          <Support />
+          {/* <Support /> */}
           <div className="user-avt profile">
             <Popover
               className="popover-style"
@@ -114,8 +115,8 @@ class MainHeader extends Component {
               {user.empProfileFileList.length ? (
                 <Avatar src={user.empProfileFileList[0].thumb} />
               ) : (
-                <Icon component={Profile} />
-              )}
+                  <Icon component={Profile} />
+                )}
               <div className="rightprofile">
                 <span className="user-name">
                   {cust_emp_fname} {cust_emp_lname}
@@ -127,7 +128,7 @@ class MainHeader extends Component {
             </Popover>
           </div>
         </div>
-        <ActivityDrawer {...this.props} />
+        {/* <ActivityDrawer {...this.props} /> */}
       </Header>
     );
   }

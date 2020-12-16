@@ -8,6 +8,7 @@ import {
 import AuthRoutes from "globals/hoc/private";
 import { Spin } from "antd";
 import { Cookies } from "react-cookie";
+import ProtectRoute from "globals/hoc/ProtectRoute";
 const cookie = new Cookies();
 
 const Store = lazy(() => import("modules/Store"));
